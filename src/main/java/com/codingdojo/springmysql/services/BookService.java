@@ -28,4 +28,17 @@ public class BookService {
             return null;
         }
     }
+    public void deleteBook(Long id) {
+        bookRepository.deleteById(id);
+    }
+//
+//    public Book updateBook(Long id, Book book) {
+//        Optional<Book> optionalBook = bookRepository.findById(id);
+//        if(optionalBook.isPresent()) {
+//            return optionalBook.get();
+//        } else {
+//            return null;
+//        }
+//
+//    }
 }
